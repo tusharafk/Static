@@ -1,0 +1,93 @@
+.container1 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  height:34rem;
+  margin-top: 15px;
+ background: linear-gradient(to right,  #fee6a9, #fbb4d1); /* Background color for the left half */
+}
+
+.row {
+  display: flex;
+  justify-content: center; 
+  margin-top: 6rem;
+  margin-left: 22rem;
+}
+
+.box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.one-two {
+  width: 200px; /* Make "One" and "Two" share half the width */
+  margin-left: 4rem;
+}
+
+.one img,
+.two img {
+  width: 100%; /* Make images fill their container */
+  height: 180px; /* Maintain aspect ratio */
+  max-width: 200px; /* Limit maximum width */
+  max-height: 200px; /* Limit maximum height */
+}
+
+.three img {
+  width: 200px; /* Make image fill its container */
+  height:22.8rem; /* Maintain aspect ratio */
+  max-width: 200px; /* Limit maximum width */
+   /* Limit maximum height */
+}
+/*right*/
+.right {
+  background-color: #ff6f61; /* Background color for the card */
+  color: black; /* Text color */
+  padding: 20px; /* Add padding */
+  font-family: Arial, sans-serif;
+  width: 350px; /* Fixed width */
+  height:150px;
+  
+  margin-top:10rem ;
+  margin-left: 2rem;
+
+}
+
+.right h1 {
+  
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.right p {
+  font-size: 10px;
+
+  
+}
+
+.right img {
+  width: 20px;
+  vertical-align: middle; /* Align the image vertically with text */
+}
+
+
+/* Add media queries for responsiveness */
+/* Adjustments for smaller screens */
+@media screen and (min-width: 768px) {
+  .container1 {
+    flex-direction: row; /* Change to row layout for larger screens */
+  }
+
+  .row {
+    margin-top: 6rem; /* Restore top margin */
+  }
+
+  .one-two {
+    margin-left: 4rem; /* Adjust margin for larger screens */
+  }
+
+  .right {
+    margin-top: 10rem; /* Increase top margin for larger screens */
+  }
+}
+
